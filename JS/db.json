@@ -1,0 +1,20 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Aman Sharma",
+      "gender": "Male",
+      "department": "HR",
+      "salary": "20000",
+      "doj": "2026-01-10"
+    },
+    {
+      "id": "2",
+      "name": "Priya Verma",
+      "gender": "Female",
+      "department": "Sales",
+      "salary": "30000",
+      "doj": "2026-02-15"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+    <div class="container">
+
+       <header>
+<div class="logo">
+    <img src="../html/logo.png" alt="Logo">
+
+    <div class="logo-text">
+        <h3 id="emp">EMPLOYEE</h3>
+        <h3 id="payroll">PAYROLL</h3>
+    </div>
+</div>
+</header><br><br>
+
+        <form id="employeeForm">
+
+            <div class="row">
+                <label for="name">Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter employee name" required>
+            </div><br><br>
+
+            <div class="row">
+                <label>Gender</label>
+
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="gender" value="Male" required>
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </label>
+                </div>
+            </div>
+<br><br>
+            <div class="row">
+                <label for="dept">Department</label>
+                <select id="dept" required>
+                    <option value="">Select Department</option>
+                    <option value="HR">HR</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                </select>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <label for="salary">Salary</label>
+                <select id="salary" required>
+                    <option value="">Select Salary</option>
+                    <option value="10000">10000</option>
+                    <option value="20000">20000</option>
+                    <option value="30000">30000</option>
+                    <option value="40000">40000</option>
+                </select>
+            </div>
+<br><br>
+            <div class="row">
+                <label for="doj">Start Date</label>
+                <input type="date" id="doj" required>
+            </div>
+<br><br>
+
+             <div class="row">
+                <label for="note">Notes</label>
+                <input type="textarea" rowspan="3">
+             </div><br><br>
+
+            <div class="actions">
+                 <button type="cancel" class="cancel-btn">
+                    Cancel
+                 </button>
+                <button type="submit" class="submit-btn">
+                    Submit
+                </button>
+
+                <button type="reset" class="reset-btn">
+                    Reset
+                </button>
+            </div>
+
+            <p id="message"></p>
+
+        </form>
+    </div>
+
+    <script src="../js/form.js"></script>
+</body>
+</html>

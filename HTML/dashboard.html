@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+    <div class="container">
+
+  <header>
+<div class="logo">
+    <img src="../html/logo.png" alt="Logo">
+
+    <div class="logo-text">
+        <h3 id="emp">EMPLOYEE</h3>
+        <h3 id="payroll">PAYROLL</h3>
+       
+</div>
+</header>
+       <br><br>
+ <div class="table-header">
+            <h2>Employee Details</h2>
+            <button class="add-btn" onclick="openForm()">Add Employee</button>
+        </div>
+      
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                </tr>
+            </thead>
+
+            <tbody id="employeeList">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

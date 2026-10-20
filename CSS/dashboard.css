@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.table-header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+.table-header h2 {
+    margin: 0; 
+    font-size: 19px;
+}
+
+.add-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background: green;
+    color: white;
+}
+      
+
+.add-btn:hover {
+    background: #455a64;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #eeeeee;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 12px;
+        overflow-x: auto;
+    }
+
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
+.logo {
+    display: flex;
+    gap: 5px;
+     width: 32px;
+    height: 65px;
+    object-fit: contain;
+    align-items:left;
+}
+.logo-text{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+#emp{
+    color: #80a900;
+}
+
+#payroll {
+    color: #45525f;
+}
